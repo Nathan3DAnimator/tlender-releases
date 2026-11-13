@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Tempo de render: Tlender contra Cycles">
+<style>
+.bg{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.mu{fill:#898781}.grid{stroke:#e4e3df}.base{stroke:#898781}
+.s1{fill:#2a78d6}.s2{fill:#eb6834}
+@media (prefers-color-scheme: dark){.bg{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.grid{stroke:#383835}
+.s1{fill:#3987e5}.s2{fill:#d95926}}
+text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+</style>
+<rect class="bg" width="900" height="300" rx="8"/>
+<text class="t1" x="24" y="34" font-size="20" font-weight="600">Tempo de render na GPU (menor é melhor)</text>
+<text class="t2" x="24" y="56" font-size="13">Ray Tracing do Tlender contra o Cycles 5.1 com OptiX, mesma cena e mesma RTX 3060.</text>
+<rect class="s1" x="24" y="68" width="12" height="12" rx="2"/><text class="t2" x="42" y="79" font-size="13">Tlender</text>
+<rect class="s2" x="110" y="68" width="12" height="12" rx="2"/><text class="t2" x="128" y="79" font-size="13">Blender Cycles</text>
+<text class="t1" x="24" y="100" font-size="13" font-weight="600">Cena pesada (1,59 M triângulos, 1080p, 256 amostras)</text>
+<text class="t2" x="184.0" y="124.0" font-size="13" text-anchor="end">Tlender</text>
+<path class="s1" d="M194.0,108 H317.428 a4,4 0 0 1 4,4 V126 a4,4 0 0 1 -4,4 H194.0 Z"/>
+<text class="t1" x="329.428" y="124.0" font-size="13">2,87 s</text>
+<text class="t2" x="184.0" y="148.0" font-size="13" text-anchor="end">Cycles</text>
+<path class="s2" d="M194.0,132 H718.36 a4,4 0 0 1 4,4 V150 a4,4 0 0 1 -4,4 H194.0 Z"/>
+<text class="t1" x="730.36" y="148.0" font-size="13">11,9 s</text>
+<text class="t1" x="24" y="194" font-size="13" font-weight="600">A mesma cena com motion blur (100 objetos em movimento)</text>
+<text class="t2" x="184.0" y="218.0" font-size="13" text-anchor="end">Tlender</text>
+<path class="s1" d="M194.0,202 H422.212 a4,4 0 0 1 4,4 V220 a4,4 0 0 1 -4,4 H194.0 Z"/>
+<text class="t1" x="434.212" y="218.0" font-size="13">5,23 s</text>
+<text class="t2" x="184.0" y="242.0" font-size="13" text-anchor="end">Cycles</text>
+<path class="s2" d="M194.0,226 H793.84 a4,4 0 0 1 4,4 V244 a4,4 0 0 1 -4,4 H194.0 Z"/>
+<text class="t1" x="805.84" y="242.0" font-size="13">13,6 s</text>
+</svg>

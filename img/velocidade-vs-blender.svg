@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 426" width="900" height="426" role="img" aria-label="Quantas vezes o Tlender é mais rápido que o Blender">
+<style>
+.bg{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.mu{fill:#898781}.grid{stroke:#e4e3df}.base{stroke:#898781}
+.s1{fill:#2a78d6}.s2{fill:#eb6834}
+@media (prefers-color-scheme: dark){.bg{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.grid{stroke:#383835}
+.s1{fill:#3987e5}.s2{fill:#d95926}}
+text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+</style>
+<rect class="bg" width="900" height="426" rx="8"/>
+<text class="t1" x="24" y="34" font-size="20" font-weight="600">Quantas vezes o Tlender é mais rápido que o Blender</text>
+<text class="t2" x="24" y="56" font-size="13">Mesma máquina (RTX 3060, 16 threads); Blender 5.1. Barra maior = Tlender mais rápido.</text>
+<line class="grid" x1="422.0" y1="64" x2="422.0" y2="376" stroke-width="1"/>
+<text class="mu" x="422.0" y="394" font-size="12" text-anchor="middle">5×</text>
+<line class="grid" x1="484.0" y1="64" x2="484.0" y2="376" stroke-width="1"/>
+<text class="mu" x="484.0" y="394" font-size="12" text-anchor="middle">10×</text>
+<line class="grid" x1="546.0" y1="64" x2="546.0" y2="376" stroke-width="1"/>
+<text class="mu" x="546.0" y="394" font-size="12" text-anchor="middle">15×</text>
+<line class="grid" x1="608.0" y1="64" x2="608.0" y2="376" stroke-width="1"/>
+<text class="mu" x="608.0" y="394" font-size="12" text-anchor="middle">20×</text>
+<line class="grid" x1="670.0" y1="64" x2="670.0" y2="376" stroke-width="1"/>
+<text class="mu" x="670.0" y="394" font-size="12" text-anchor="middle">25×</text>
+<text class="t1" x="348" y="92.0" font-size="13" text-anchor="end">Extrudar numa malha de 2 M vértices (aprox.)</text>
+<path class="s1" d="M360,77 H653.5999999999999 a4,4 0 0 1 4,4 V93 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="665.5999999999999" y="92.0" font-size="13" font-weight="600">24,0×<tspan class="t2" font-weight="400"> 100 ms contra 2,40 s</tspan></text>
+<text class="t1" x="348" y="126.0" font-size="13" text-anchor="end">Exportar glTF (1,37 M triângulos, rig de 300 ossos)</text>
+<path class="s1" d="M360,111 H568.1777777777778 a4,4 0 0 1 4,4 V127 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="580.1777777777778" y="126.0" font-size="13" font-weight="600">17,1×<tspan class="t2" font-weight="400"> 450 ms contra 7,70 s</tspan></text>
+<text class="t1" x="348" y="160.0" font-size="13" text-anchor="end">Importar glTF (a mesma cena)</text>
+<path class="s1" d="M360,145 H453.5466666666667 a4,4 0 0 1 4,4 V161 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="465.5466666666667" y="160.0" font-size="13" font-weight="600">7,9×<tspan class="t2" font-weight="400"> 750 ms contra 5,90 s</tspan></text>
+<text class="t1" x="348" y="194.0" font-size="13" text-anchor="end">Exportar OBJ (2 M triângulos)</text>
+<path class="s1" d="M360,179 H426.2902857142857 a4,4 0 0 1 4,4 V195 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="438.2902857142857" y="194.0" font-size="13" font-weight="600">5,7×<tspan class="t2" font-weight="400"> 175 ms contra 992 ms</tspan></text>
+<text class="t1" x="348" y="228.0" font-size="13" text-anchor="end">Importar FBX (1 M triângulos)</text>
+<path class="s1" d="M360,213 H411.1111111111111 a4,4 0 0 1 4,4 V229 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="423.1111111111111" y="228.0" font-size="13" font-weight="600">4,4×<tspan class="t2" font-weight="400"> 180 ms contra 800 ms</tspan></text>
+<text class="t1" x="348" y="262.0" font-size="13" text-anchor="end">Render GPU, cena pesada (vs Cycles OptiX)</text>
+<path class="s1" d="M360,247 H407.4146341463415 a4,4 0 0 1 4,4 V263 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="419.4146341463415" y="262.0" font-size="13" font-weight="600">4,1×<tspan class="t2" font-weight="400"> 2,87 s contra 11,9 s</tspan></text>
+<text class="t1" x="348" y="296.0" font-size="13" text-anchor="end">Exportar USDA</text>
+<path class="s1" d="M360,281 H404.28484848484845 a4,4 0 0 1 4,4 V297 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="416.28484848484845" y="296.0" font-size="13" font-weight="600">3,9×<tspan class="t2" font-weight="400"> 660 ms contra 2,57 s</tspan></text>
+<text class="t1" x="348" y="330.0" font-size="13" text-anchor="end">Render GPU com motion blur (vs Cycles OptiX)</text>
+<path class="s1" d="M360,315 H388.24474187380497 a4,4 0 0 1 4,4 V331 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="400.24474187380497" y="330.0" font-size="13" font-weight="600">2,6×<tspan class="t2" font-weight="400"> 5,23 s contra 13,6 s</tspan></text>
+<text class="t1" x="348" y="364.0" font-size="13" text-anchor="end">Importar OBJ (2 M triângulos)</text>
+<path class="s1" d="M360,349 H387.84271844660196 a4,4 0 0 1 4,4 V365 a4,4 0 0 1 -4,4 H360 Z"/>
+<text class="t1" x="399.84271844660196" y="364.0" font-size="13" font-weight="600">2,6×<tspan class="t2" font-weight="400"> 206 ms contra 529 ms</tspan></text>
+<line class="base" x1="360" y1="64" x2="360" y2="376" stroke-width="1"/>
+</svg>
