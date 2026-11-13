@@ -1,91 +1,90 @@
 # Tlender
 
-**Tlender é um programa de 3D para modelar, animar e renderizar personagens e cenas**, feito do zero em C e Vulkan para
-ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
-e salva arquivos `.blend`.
+**English** · [Português](README.pt.md) · [Español](README.es.md)
 
-> *English: Tlender is a fast 3D app for modeling, animation and rendering, written from scratch in C + Vulkan. It
-> follows Blender's keymap and concepts and opens and saves `.blend` files. The interface is available in Portuguese,
-> English and Spanish.*
+**Tlender is a 3D app for modeling, animating and rendering characters and scenes**, written from scratch in C and
+Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
+opens and saves `.blend` files.
 
-**Versão atual: 0.25** (13/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
-[Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
+**Current version: 0.25** (2026-11-13) · Windows 10/11 64-bit · English, Português, Español ·
+[Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
-## O que você está baixando
+## What you are downloading
 
-Na [release mais recente](https://github.com/NathanLourencoPeixoto/tlender-releases/releases/latest) há três arquivos:
+The [latest release](https://github.com/NathanLourencoPeixoto/tlender-releases/releases/latest) has three files:
 
-| Arquivo | O que é |
+| File | What it is |
 |---|---|
-| `Tlender-<versão>-win64.zip` | **O programa.** Extraia a pasta onde quiser e abra o `tlender.exe` (não precisa instalar nada). |
-| `Tlender-<versão>-win64.zip.sha256` | O código para conferir se o download chegou inteiro. |
-| `Tlender-<versão>-win64.zip.sig` | A assinatura que o atualizador do Tlender confere antes de instalar uma versão nova. |
+| `Tlender-<version>-win64.zip` | **The program.** Extract the folder anywhere and open `tlender.exe` (nothing to install). |
+| `Tlender-<version>-win64.zip.sha256` | The checksum to confirm the download arrived intact. |
+| `Tlender-<version>-win64.zip.sig` | The signature Tlender's updater checks before installing a new version. |
 
-Dentro do zip vêm o `tlender.exe`, o instalador de atualizações (`tlender_updater.exe`), o denoiser (Intel OIDN), o
-NVIDIA DLSS, o runtime do Visual C++ e um `LEIA-ME.txt`. Nada é instalado no sistema; as preferências ficam em
-`%APPDATA%\Tlender`.
+The zip contains `tlender.exe`, the update installer (`tlender_updater.exe`), the denoiser (Intel OIDN), NVIDIA DLSS,
+the Visual C++ runtime and a `LEIA-ME.txt` (readme). Nothing is installed on the system; preferences are kept in
+`%APPDATA%\Tlender`. The interface language is set in *Edit > Preferences > Interface > Translation*.
 
-**Requisitos**: uma placa de vídeo com Vulkan 1.2. Para renderizar na GPU, ray tracing por hardware (NVIDIA RTX, AMD RX
-6000 ou mais nova, Intel Arc); sem isso o render usa a CPU.
+**Requirements**: a graphics card with Vulkan 1.2. Rendering on the GPU needs hardware ray tracing (NVIDIA RTX, AMD RX
+6000 or newer, Intel Arc); without it, rendering uses the CPU.
 
-**Aviso do Windows**: o executável ainda não tem um certificado de assinatura de código, então o SmartScreen ou o
-antivírus podem alertar na primeira vez. Clique em *Mais informações → Executar assim mesmo*. Cada pacote é assinado
-pelo autor (o arquivo `.sig`), e o atualizador só instala versões com essa assinatura.
+**Windows warning**: the executable does not have a code-signing certificate yet, so SmartScreen or your antivirus may
+warn you the first time. Click *More info → Run anyway*. Every package is signed by the author (the `.sig` file), and
+the updater only installs versions that carry that signature.
 
-## Atualizações
+## Updates
 
-O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudaram**. A versão nova é instalada quando você
-fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
-terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
-e no próprio programa (*Ajuda > Notas da versão*).
+Tlender checks for a new version when it opens and downloads **only the files that changed**. The new version is
+installed when you close the program. Tick *Use Tlender Beta Version* in the Preferences to join the **Beta channel**
+and get test versions first (they end in `_b`). Everything that changed in each version is in the
+[releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
+Release Notes*).
 
-### Novidades da 0.25
+### What's new in 0.25
 
-- **Modelagem revista**: uma barra só por categorias (Extrudar e criar, Cortar, Arestas e bordas, Deformar, Limpar e
-  juntar), dicas que explicam como usar cada ferramenta e a pizza de modelagem (Shift+Q).
-- **Ferramentas novas**: Multi-Cut, Connect, Smart Extrude, Fechar furo, Costurar borda, Solda no alvo, Press Pull e
-  bevel editável depois de feito.
-- **Animação por etapa**: barras para Bloquear, Spline e Polir, troca de espaço sem pulo, travar no mundo, desenho 2D
-  sobre a vista, editor de fantasmas, rastreador de arcos e gráfico de espaçamento.
-- **Ícones novos** em dois tons, com o elemento afetado em laranja.
+- **Modeling redesigned**: a single toolbar by category (Extrude and Create, Clip, Edges and Borders, Deform, Clean Up
+  and Merge), tooltips that explain how to use each tool, and the modeling pie menu (Shift+Q).
+- **New tools**: Multi-Cut, Connect, Smart Extrude, Close Hole, Stitch Border, Target Weld, Press Pull and a bevel you
+  can edit after it is made.
+- **Animation by stage**: toolbars for Block, Spline and Polish, space switching without popping, world lock, 2D
+  drawing over the view, ghost editor, arc tracker and spacing chart.
+- **New icons** in two tones, with the affected element in orange.
 
-## Mais rápido que o Blender
+## Faster than Blender
 
-Medido na mesma máquina, com o mesmo arquivo nos dois programas (Blender 5.1):
+Measured on the same machine, with the same file in both programs (Blender 5.1):
 
-![Quantas vezes o Tlender é mais rápido que o Blender](img/velocidade-vs-blender.svg)
+![How many times faster Tlender is than Blender](img/speed-vs-blender-en.svg)
 
-![Tempo de render: Tlender contra Cycles](img/render-vs-cycles.svg)
+![Render time: Tlender vs Cycles](img/render-vs-cycles-en.svg)
 
-## Fiel ao Blender
+## Faithful to Blender
 
-A meta é o mesmo resultado que o Blender dá, com o mesmo arquivo:
+The goal is the same result Blender gives, from the same file:
 
-| O que foi comparado | Resultado |
+| What was compared | Result |
 |---|---|
-| Luzes (sol, spot e área) contra o Cycles | sol e spot iguais; luz de área a menos de 0,1% |
-| Arquivos glTF exportados, abertos em 6 versões do Blender (4.0 a 5.3) | 66 de 66 corretos |
-| Arquivos FBX exportados, abertos nas mesmas 6 versões | 54 de 54 corretos (vértices com pele a 0,000005) |
-| Drivers de uma rig de produção importada do `.blend` | 370 de 370 iguais |
-| `.blend` | abre do Blender 2.7x ao 5.3 e salva para 4.0, 4.2, 4.5, 5.0, 5.1 ou 5.3 |
+| Lights (sun, spot and area) against Cycles | sun and spot identical; area light within 0.1% |
+| Exported glTF files opened in 6 Blender versions (4.0 to 5.3) | 66 of 66 correct |
+| Exported FBX files opened in the same 6 versions | 54 of 54 correct (skinned vertices within 0.000005) |
+| Drivers of a production rig imported from `.blend` | 370 of 370 identical |
+| `.blend` | opens Blender 2.7x to 5.3 files and saves for 4.0, 4.2, 4.5, 5.0, 5.1 or 5.3 |
 
-## O que o Tlender tem que o Blender não tem
+## What Tlender has that Blender doesn't
 
-- **Três renderizadores**: *Ray Tracing* (path tracer como o Cycles), *Render X* (mais rápido em luz indireta) e *Tempo
-  real*, com **DLSS** e Ray Reconstruction nos três.
-- **Pose por arrasto em qualquer rig**: reconhece Auto-Rig Pro, Rigify, AdvancedSkeleton, Mixamo, MetaHuman, VRoid,
-  Character Creator, Daz e outros, e posa pelos controles da própria rig.
-- **Ferramentas de animador**: etapas Bloquear/Spline/Polir, espaços temporários, travar no mundo, desenho 2D por
-  quadro, fantasmas, arcos, gráfico de espaçamento e ajuda de física (centro de massa e parábola).
-- **Lip sync em português**, rotoscopia com IA (SAM 2), multidões e captura de movimento ao vivo.
-- **Física**: líquidos e gases em voxels, fogo que ilumina a cena, tecidos, cordas e correntes, corpos rígidos,
-  destruição, chuva que molha e escorre, hair com física.
-- **Texture Graph** ao vivo nos materiais, em 16 bits, animável e calculado na GPU.
-- **Modo Maya**: atalhos, ícones, Hotbox e Attribute Editor para quem vem do Maya.
-- **Exporta para a Real Engine**, a game engine do mesmo autor.
-- **Tlender Mobile**: o mesmo programa em celulares e tablets Android, com interface para toque e caneta.
+- **Three renderers**: *Ray Tracing* (a path tracer like Cycles), *Render X* (faster with indirect light) and
+  *Realtime*, with **DLSS** and Ray Reconstruction in all three.
+- **Drag posing on any rig**: recognizes Auto-Rig Pro, Rigify, AdvancedSkeleton, Mixamo, MetaHuman, VRoid, Character
+  Creator, Daz and more, and poses through the rig's own controls.
+- **Animator tools**: Block/Spline/Polish stages, temporary spaces, world lock, per-frame 2D drawing, ghosts, arcs,
+  spacing chart and physics help (center of mass and trajectory).
+- **Portuguese lip sync**, AI rotoscoping (SAM 2), crowds and live motion capture.
+- **Physics**: voxel liquids and gases, fire that lights the scene, cloth, ropes and chains, rigid bodies, destruction,
+  rain that wets and drips, hair with physics.
+- **Texture Graph** live in materials, in 16 bits, animatable and computed on the GPU.
+- **Maya mode**: shortcuts, icons, Hotbox and Attribute Editor for people coming from Maya.
+- **Exports to Real Engine**, the game engine by the same author.
+- **Tlender Mobile**: the same program on Android phones and tablets, with an interface for touch and pen.
 
-## Reportar um problema
+## Reporting a problem
 
-No programa: *Ajuda > Reportar um bug* (ou o besouro na barra de status) ou *Enviar sugestão*. O texto, as imagens e
-o relatório de travamento são enviados direto, sem precisar de conta no GitHub.
+In the program: *Help > Report a Bug* (or the bug icon in the status bar) or *Send a Suggestion*. The text, images and
+crash report are sent directly, no GitHub account needed.

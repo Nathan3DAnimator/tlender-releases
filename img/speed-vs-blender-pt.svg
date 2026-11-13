@@ -46,5 +46,4 @@ text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
 <text class="t1" x="348" y="364.0" font-size="13" text-anchor="end">Importar OBJ (2 M triângulos)</text>
 <path class="s1" d="M360,349 H387.84271844660196 a4,4 0 0 1 4,4 V365 a4,4 0 0 1 -4,4 H360 Z"/>
 <text class="t1" x="399.84271844660196" y="364.0" font-size="13" font-weight="600">2,6×<tspan class="t2" font-weight="400"> 206 ms contra 529 ms</tspan></text>
-<line class="base" x1="360" y1="64" x2="360" y2="376" stroke-width="1"/>
-</svg>
+<line class="base" x1="360" y1="64" x2="360" y2="376" stroke-width="1"/></svg>
