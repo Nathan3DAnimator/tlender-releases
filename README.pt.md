@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.26** (14/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.27** (14/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -37,20 +37,18 @@ fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências vo
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
 
-### Novidades da 0.26
+### Novidades da 0.27
 
-- **Vista Renderizada nítida sem DLSS**: o Ray Tracing e o Render X mostram o ruído fino que vai limpando, como os
-  outros renderizadores (a vista ficava borrada com a preferência Tamanho do pixel acima de 1).
-- **Árvore de luzes**: cenas com muitas luzes ficam muito mais limpas (257 luzes: ruído 4,5× menor com 64 amostras, ~10%
-  a mais de tempo).
-- **Tempo real sem pontos brancos** com DLSS ou TSR (1937 → 50 por quadro com a câmera andando), olho de vidro como no
-  Ray Tracing e emissão de verdade nos reflexos.
-- **Pelagem do .blend**: o pelo por partículas do Blender chega com os mesmos fios, comprimento e cor, também no Tempo
-  real.
-- **Barras em colunas** (arraste uma categoria para o lado de outra; 3 colunas por padrão), **atalhos do Shift/Ctrl/Alt**
-  na barra de status e **Organizar nodes** em todos os editores de nodes (Shift+O).
-- **Dados anônimos de uso, só com a sua permissão** (país e estado, sem IP), e a janela de atualização mostra o tamanho
-  real do download.
+- **Shaders novos**: Toon, Metálico (cor da borda F82 ou metal físico) e Refração; Vidro com anisotropia e película fina,
+  dispersão no Principled e uma Camada de shader que empilha materiais como no MaterialX. Nos três renderizadores.
+- **Biblioteca de materiais** com miniaturas e busca, **materiais em camadas** com máscaras (os nodes são gerados e
+  continuam editáveis) e **instâncias de material** com parâmetros expostos.
+- **Várias cenas no arquivo** (Cópia ligada, Cópia inteira) em que a cena fora de vista não pesa, **View Layers** e
+  **cena dentro de cena** (sobreposição, shadow catcher, instância).
+- **Portais entre cenas**: uma superfície de qualquer forma dos dois lados, vista através nos três renderizadores;
+  objetos e a câmera da vista atravessam sem salto.
+- **Ligação com IA (MCP)** em Preferências > IA: desligada por padrão, só local, com chave; a IA lê a cena, edita e
+  renderiza, e cada ação entra no desfazer.
 
 ## Capturas
 

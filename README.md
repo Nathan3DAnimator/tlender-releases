@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.26** (2026-11-14) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.27** (2026-11-14) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -38,18 +38,18 @@ and get test versions first (they end in `_b`). Everything that changed in each 
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
 
-### What's new in 0.26
+### What's new in 0.27
 
-- **A sharp Rendered view without DLSS**: Ray Tracing and Render X show the fine noise that clears up, like other
-  renderers (the view was blurry when the Pixel Size preference was above 1).
-- **Light tree**: scenes with many lights are much cleaner (257 lights: 4.5× less noise at 64 samples, ~10% more time).
-- **Realtime without white dots** with DLSS or TSR (1937 → 50 per frame with the camera moving), glass eyes like Ray
-  Tracing, real emission in reflections.
-- **Fur from .blend**: particle fur from Blender arrives with the same strands, length and color, also in Realtime.
-- **Toolbars in columns** (drag a category beside another; 3 columns by default), **Shift/Ctrl/Alt hints** in the status
-  bar and **Arrange nodes** in every node editor (Shift+O).
-- **Anonymous usage data, only with your permission** (country and state, no IP), and the update window shows the real
-  download size.
+- **New shaders**: Toon, Metallic (F82 edge color or a physical metal) and Refraction; Glass with anisotropy and thin
+  film, dispersion in Principled, and a Layer Shader that stacks materials like MaterialX. In all three renderers.
+- **Material library** with thumbnails and search, **layered materials** with masks (the nodes are generated and stay
+  editable) and **material instances** with exposed parameters.
+- **Several scenes per file** (Linked Copy, Full Copy) where the scene not in view does not weigh, **View Layers**, and a
+  **scene inside a scene** (overlay, shadow catcher, instance).
+- **Portals between scenes**: a surface of any shape on both sides, seen through in all three renderers; objects and the
+  viewport camera cross with no pop.
+- **AI connection (MCP)** in Preferences > AI: off by default, local only, with a key; the AI reads the scene, edits it
+  and renders, with every action in undo.
 
 ## Screenshots
 
