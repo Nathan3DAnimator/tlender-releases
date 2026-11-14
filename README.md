@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.25** (2026-11-13) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.26** (2026-11-14) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -38,15 +38,24 @@ and get test versions first (they end in `_b`). Everything that changed in each 
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
 
-### What's new in 0.25
+### What's new in 0.26
 
-- **Modeling redesigned**: a single toolbar by category (Extrude and Create, Clip, Edges and Borders, Deform, Clean Up
-  and Merge), tooltips that explain how to use each tool, and the modeling pie menu (Shift+Q).
-- **New tools**: Multi-Cut, Connect, Smart Extrude, Close Hole, Stitch Border, Target Weld, Press Pull and a bevel you
-  can edit after it is made.
-- **Animation by stage**: toolbars for Block, Spline and Polish, space switching without popping, world lock, 2D
-  drawing over the view, ghost editor, arc tracker and spacing chart.
-- **New icons** in two tones, with the affected element in orange.
+- **A sharp Rendered view without DLSS**: Ray Tracing and Render X show the fine noise that clears up, like other
+  renderers (the view was blurry when the Pixel Size preference was above 1).
+- **Light tree**: scenes with many lights are much cleaner (257 lights: 4.5× less noise at 64 samples, ~10% more time).
+- **Realtime without white dots** with DLSS or TSR (1937 → 50 per frame with the camera moving), glass eyes like Ray
+  Tracing, real emission in reflections.
+- **Fur from .blend**: particle fur from Blender arrives with the same strands, length and color, also in Realtime.
+- **Toolbars in columns** (drag a category beside another; 3 columns by default), **Shift/Ctrl/Alt hints** in the status
+  bar and **Arrange nodes** in every node editor (Shift+O).
+- **Anonymous usage data, only with your permission** (country and state, no IP), and the update window shows the real
+  download size.
+
+## Screenshots
+
+![The Rendered view with Ray Tracing: brick, glass, chrome and lava materials](img/rendered-view.jpg)
+
+![Edit Mode with the modeling tools in columns](img/modeling-columns.jpg)
 
 ## Faster than Blender
 

@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.25** (13/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.26** (14/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -38,15 +38,26 @@ recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
 
-### Novedades de la 0.25
+### Novedades de la 0.26
 
-- **Modelado renovado**: una sola barra por categorías (Extruir y crear, Recortar, Aristas y bordes, Deformar, Limpiar
-  y unir), consejos que explican cómo usar cada herramienta y el menú circular de modelado (Shift+Q).
-- **Herramientas nuevas**: Multi-Cut, Connect, Smart Extrude, Cerrar agujero, Coser borde, Soldar al objetivo, Press
-  Pull y un bevel que se puede editar después de hecho.
-- **Animación por etapas**: barras para Bloquear, Spline y Pulir, cambio de espacio sin saltos, fijar en el mundo,
-  dibujo 2D sobre la vista, editor de fantasmas, rastreador de arcos y gráfico de espaciado.
-- **Iconos nuevos** en dos tonos, con el elemento afectado en naranja.
+- **Vista Renderizada nítida sin DLSS**: Ray Tracing y Render X muestran el ruido fino que se va limpiando, como otros
+  renderizadores (la vista se veía borrosa con la preferencia Tamaño del píxel por encima de 1).
+- **Árbol de luces**: las escenas con muchas luces salen mucho más limpias (257 luces: 4,5× menos ruido con 64
+  muestras, ~10% más de tiempo).
+- **Tiempo real sin puntos blancos** con DLSS o TSR (1937 → 50 por fotograma con la cámara en movimiento), ojos de vidrio
+  como en Ray Tracing y emisión real en los reflejos.
+- **Pelaje del .blend**: el pelo de partículas de Blender llega con las mismas fibras, longitud y color, también en
+  Tiempo real.
+- **Barras en columnas** (arrastra una categoría junto a otra; 3 columnas por defecto), **atajos de Shift/Ctrl/Alt** en
+  la barra de estado y **Organizar nodos** en todos los editores de nodos (Shift+O).
+- **Datos de uso anónimos, solo con tu permiso** (país y estado, sin IP), y la ventana de actualización muestra el
+  tamaño real de la descarga.
+
+## Capturas
+
+![La vista Renderizada con Ray Tracing: ladrillo, vidrio, cromo y lava](img/rendered-view.jpg)
+
+![El Modo Edición con las herramientas de modelado en columnas](img/modeling-columns.jpg)
 
 ## Más rápido que Blender
 

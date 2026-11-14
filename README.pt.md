@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.25** (13/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.26** (14/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -37,15 +37,26 @@ fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências vo
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
 
-### Novidades da 0.25
+### Novidades da 0.26
 
-- **Modelagem revista**: uma barra só por categorias (Extrudar e criar, Cortar, Arestas e bordas, Deformar, Limpar e
-  juntar), dicas que explicam como usar cada ferramenta e a pizza de modelagem (Shift+Q).
-- **Ferramentas novas**: Multi-Cut, Connect, Smart Extrude, Fechar furo, Costurar borda, Solda no alvo, Press Pull e
-  bevel editável depois de feito.
-- **Animação por etapa**: barras para Bloquear, Spline e Polir, troca de espaço sem pulo, travar no mundo, desenho 2D
-  sobre a vista, editor de fantasmas, rastreador de arcos e gráfico de espaçamento.
-- **Ícones novos** em dois tons, com o elemento afetado em laranja.
+- **Vista Renderizada nítida sem DLSS**: o Ray Tracing e o Render X mostram o ruído fino que vai limpando, como os
+  outros renderizadores (a vista ficava borrada com a preferência Tamanho do pixel acima de 1).
+- **Árvore de luzes**: cenas com muitas luzes ficam muito mais limpas (257 luzes: ruído 4,5× menor com 64 amostras, ~10%
+  a mais de tempo).
+- **Tempo real sem pontos brancos** com DLSS ou TSR (1937 → 50 por quadro com a câmera andando), olho de vidro como no
+  Ray Tracing e emissão de verdade nos reflexos.
+- **Pelagem do .blend**: o pelo por partículas do Blender chega com os mesmos fios, comprimento e cor, também no Tempo
+  real.
+- **Barras em colunas** (arraste uma categoria para o lado de outra; 3 colunas por padrão), **atalhos do Shift/Ctrl/Alt**
+  na barra de status e **Organizar nodes** em todos os editores de nodes (Shift+O).
+- **Dados anônimos de uso, só com a sua permissão** (país e estado, sem IP), e a janela de atualização mostra o tamanho
+  real do download.
+
+## Capturas
+
+![A vista Renderizada com o Ray Tracing: tijolo, vidro, cromo e lava](img/rendered-view.jpg)
+
+![O Modo Edição com as ferramentas de modelagem em colunas](img/modeling-columns.jpg)
 
 ## Mais rápido que o Blender
 
