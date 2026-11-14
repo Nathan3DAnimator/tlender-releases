@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.27** (2026-11-14) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.28** (2026-11-14) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -38,18 +38,14 @@ and get test versions first (they end in `_b`). Everything that changed in each 
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
 
-### What's new in 0.27
+### What's new in 0.28
 
-- **New shaders**: Toon, Metallic (F82 edge color or a physical metal) and Refraction; Glass with anisotropy and thin
-  film, dispersion in Principled, and a Layer Shader that stacks materials like MaterialX. In all three renderers.
-- **Material library** with thumbnails and search, **layered materials** with masks (the nodes are generated and stay
-  editable) and **material instances** with exposed parameters.
-- **Several scenes per file** (Linked Copy, Full Copy) where the scene not in view does not weigh, **View Layers**, and a
-  **scene inside a scene** (overlay, shadow catcher, instance).
-- **Portals between scenes**: a surface of any shape on both sides, seen through in all three renderers; objects and the
-  viewport camera cross with no pop.
-- **AI connection (MCP)** in Preferences > AI: off by default, local only, with a key; the AI reads the scene, edits it
-  and renders, with every action in undo.
+- **No more waiting for GPU kernels**: F12 and the Rendered view show the image almost at once (34.8 s -> 0.6 s in the
+  test scene) while the full kernel finishes in the background, and switch to it with no black screen.
+- **Kernels kept one by one**: the second launch has everything ready in 0.3 s; after an update only what changed
+  recompiles; a real progress bar that says what is left.
+- **Realtime compiles faster** (only the node groups the scene uses: 128 s -> 56 s).
+- The portals between scenes were removed; several scenes, View Layers and scene-in-scene stay.
 
 ## Screenshots
 

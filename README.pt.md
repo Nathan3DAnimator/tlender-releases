@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.27** (14/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.28** (14/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -37,18 +37,14 @@ fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências vo
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
 
-### Novidades da 0.27
+### Novidades da 0.28
 
-- **Shaders novos**: Toon, Metálico (cor da borda F82 ou metal físico) e Refração; Vidro com anisotropia e película fina,
-  dispersão no Principled e uma Camada de shader que empilha materiais como no MaterialX. Nos três renderizadores.
-- **Biblioteca de materiais** com miniaturas e busca, **materiais em camadas** com máscaras (os nodes são gerados e
-  continuam editáveis) e **instâncias de material** com parâmetros expostos.
-- **Várias cenas no arquivo** (Cópia ligada, Cópia inteira) em que a cena fora de vista não pesa, **View Layers** e
-  **cena dentro de cena** (sobreposição, shadow catcher, instância).
-- **Portais entre cenas**: uma superfície de qualquer forma dos dois lados, vista através nos três renderizadores;
-  objetos e a câmera da vista atravessam sem salto.
-- **Ligação com IA (MCP)** em Preferências > IA: desligada por padrão, só local, com chave; a IA lê a cena, edita e
-  renderiza, e cada ação entra no desfazer.
+- **Sem esperar os kernels da GPU**: o F12 e a vista Renderizada mostram a imagem quase na hora (34,8 s -> 0,6 s na cena
+  de teste) enquanto o kernel completo termina em segundo plano, e trocam para ele sem tela preta.
+- **Kernels guardados um por um**: a segunda abertura deixa tudo pronto em 0,3 s; depois de uma atualização só o que
+  mudou recompila; barra de progresso de verdade, dizendo o que falta.
+- **Tempo real compila mais rápido** (só os grupos de nodes que a cena usa: 128 s -> 56 s).
+- Os portais entre cenas foram retirados; as várias cenas, as View Layers e a cena dentro de cena continuam.
 
 ## Capturas
 

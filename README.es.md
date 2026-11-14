@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.27** (14/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.28** (14/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -38,19 +38,15 @@ recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
 
-### Novedades de la 0.27
+### Novedades de la 0.28
 
-- **Shaders nuevos**: Toon, Metálico (color del borde F82 o metal físico) y Refracción; Vidrio con anisotropía y película
-  fina, dispersión en el Principled y una Capa de shader que apila materiales como en MaterialX. En los tres
-  renderizadores.
-- **Biblioteca de materiales** con miniaturas y búsqueda, **materiales en capas** con máscaras (los nodos se generan y
-  siguen editables) e **instancias de material** con parámetros expuestos.
-- **Varias escenas por archivo** (Copia vinculada, Copia completa) donde la escena fuera de vista no pesa, **View
-  Layers** y **escena dentro de escena** (superposición, shadow catcher, instancia).
-- **Portales entre escenas**: una superficie de cualquier forma en los dos lados, vista a través en los tres
-  renderizadores; los objetos y la cámara de la vista cruzan sin saltos.
-- **Conexión con IA (MCP)** en Preferencias > IA: desactivada por defecto, solo local, con clave; la IA lee la escena,
-  la edita y renderiza, y cada acción entra en deshacer.
+- **Sin esperar los kernels de la GPU**: F12 y la vista Renderizada muestran la imagen casi al instante (34,8 s -> 0,6 s
+  en la escena de prueba) mientras el kernel completo termina en segundo plano, y cambian a él sin pantalla negra.
+- **Kernels guardados uno a uno**: la segunda apertura tiene todo listo en 0,3 s; después de una actualización solo se
+  recompila lo que cambió; una barra de progreso real que dice lo que falta.
+- **Tiempo real compila más rápido** (solo los grupos de nodos que usa la escena: 128 s -> 56 s).
+- Se retiraron los portales entre escenas; las varias escenas, las View Layers y la escena dentro de escena se
+  mantienen.
 
 ## Capturas
 
