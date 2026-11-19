@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.29** (19/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.29** (19/11/2026) · Beta: **0.30_b** (19/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,14 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Novidades da 0.30_b (Beta)
+
+- **Mocap com vídeos de verdade**: o que não aparece no vídeo (as pernas numa webcam, um braço que sai do quadro) fica
+  parado em vez de se debater: T-pose se nunca aparece, a última pose vista por até 2 s, e volta suave. Vídeo de tronco e
+  braços agora rastreia o corpo e o rosto.
+- **Prévia 3D do rosto** no passo Rastrear: uma cabeça com as 52 expressões ARKit animada pelo rastreio, e a malha do
+  rosto (olhos, íris, lábios, contorno) desenhada sobre o vídeo.
 
 ### Novidades da 0.29
 

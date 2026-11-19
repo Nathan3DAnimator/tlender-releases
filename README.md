@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.29** (2026-11-19) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.29** (2026-11-19) · Beta: **0.30_b** (2026-11-19) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,14 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.30_b (Beta)
+
+- **Mocap with real videos**: what the video doesn't show (the legs on a webcam, an arm leaving the frame) stays still
+  instead of thrashing: T-pose if it never shows, the last pose seen for up to 2 s, and a smooth way back. Upper-body
+  videos now track both the body and the face.
+- **3D face preview** in the Track step: a head with the 52 ARKit expressions driven by the tracking, and the face mesh
+  (eyes, irises, lips, outline) drawn over the video.
 
 ### What's new in 0.29
 
