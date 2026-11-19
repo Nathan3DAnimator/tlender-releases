@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.28** (2026-11-14) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.29** (2026-11-19) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,17 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.29
+
+- **Video mocap**: the Mocap tab goes from video to animation in 6 steps (Sources, Sync, Calibrate, Track, Clean,
+  Apply). Body, hands and face, together or on their own, from videos, the webcam, the phone (it becomes a camera over
+  Wi-Fi with a QR code) or several cameras and a drone at once, synced and calibrated automatically.
+- **Onto any character**: the ready skeleton "Mocap Tlender" or your character's rig (Mixamo, Unreal, CC, auto-rig,
+  Rigify); the face onto shape keys, real bones, mixed rigs or rigs with controls.
+- **Export to the Real Engine (.tlend)** with the evaluated meshes and the nodes baked into images.
+- Box select like Blender's (any visible part of the object), textures that update by themselves when the file changes
+  and faster startup (~7 s -> 2.4 s).
 
 ### What's new in 0.28
 

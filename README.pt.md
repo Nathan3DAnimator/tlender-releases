@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.28** (14/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.29** (19/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,17 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Novidades da 0.29
+
+- **Mocap por vídeo**: a aba Mocap leva do vídeo à animação em 6 passos (Fontes, Sincronizar, Calibrar, Rastrear,
+  Limpar, Aplicar). Corpo, mãos e rosto, juntos ou separados, por vídeos, webcam, celular (vira câmera pelo Wi-Fi com um
+  QR code) ou várias câmeras e um drone ao mesmo tempo, sincronizados e calibrados sozinhos.
+- **Em qualquer personagem**: o esqueleto pronto "Mocap Tlender" ou o rig do seu personagem (Mixamo, Unreal, CC,
+  auto-rig, Rigify); o rosto em shape keys, ossos reais, rigs mistos ou rigs com controles.
+- **Exportar para a Real Engine (.tlend)** com as malhas avaliadas e os nós assados em imagens.
+- Seleção por caixa como no Blender (qualquer parte visível do objeto), texturas que se atualizam sozinhas quando o
+  arquivo muda e abertura mais rápida (~7 s -> 2,4 s).
 
 ### Novidades da 0.28
 
