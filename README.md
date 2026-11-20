@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.31** (2026-11-20) · Beta: **0.33_b** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.34** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -38,24 +38,18 @@ and get test versions first (they end in `_b`). Everything that changed in each 
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
 
-### What's new in 0.33_b (Beta) and Mobile 0.16_b
+### What's new in 0.34 and Mobile 0.16
 
-- **Mocap rebuilt on RGB MoCap**: RGB MoCap's code ships inside Tlender and uses the runtimes and models of your
-  installation (Preferences > AI > Mocap, with a model manager). The Mocap tab is its workflow: ExMR, FlowHMR or GVHMR,
-  several people, contact correction editable on the timeline, face to shape keys and FBX/BVH export. PC with NVIDIA.
-- **Body fitted to the picture**: on a webcam video measured against two cameras, the body's world error fell from
-  13.5 cm (RGB MoCap's result) to 9 cm; the preview draws the bones over the video.
-- **Import RGB MoCap's FBX and the Retarget window** (PC and Mobile): the FBX comes in with the character already mapped
-  and the window passes the motion to any character, with body-part silhouettes, a live preview, "In place" and a
-  per-bone offset. The retarget lands 1.4 cm from RGB MoCap's result on the same character (13 cm before).
-
-### What's new in 0.32_b (Beta)
-
-- **RGB MoCap as the mocap engine**: with RGB MoCap installed, the Mocap tab runs its FlowHMR or ExMR on a one-camera
-  video (Preferences > AI > FlowHMR = its folder). PC with an NVIDIA card.
-- **Body re-placed by the picture**: the models get the pose right but their body drifts in the world; Tlender finds
-  the camera from the picture and re-places the body in every frame. On a webcam video measured against two cameras,
-  the body's error went from 16 cm (RGB MoCap's FlowHMR) to 9 cm, with the same pose and no added shake.
+- **Mocap rebuilt on RGB MoCap**, inside Tlender (using the runtimes and models of your RGB MoCap installation): ExMR,
+  FlowHMR or GVHMR, **several videos** (new person or another angle, synced by themselves), turning the video, finding
+  people, a bar with the time left, editable contact correction, face, FBX/BVH export, a **3D figure** and **root
+  motion** (travelling or in place). On a webcam + phone take, the body's world error fell from 13.5 cm (RGB MoCap) to
+  9 cm with the webcam and 7.1 cm with both angles. PC with NVIDIA.
+- **Retarget to any character** (PC and Mobile), now an editor: body-part silhouettes, a preview equal to the bake,
+  "In place", per-bone offsets, the **face** on shape keys or bones/controls (each expression linked to a target) and
+  **profiles** saved per rig. The math is RGB MoCap's: 1.4 cm from its result (13 cm before), and real rigs work
+  (Auto-Rig Pro, game rigs, IK legs with a pole, stretching rigs).
+- **Import RGB MoCap's FBX**, with the ARKit/Live Link face.
 
 ### What's new in 0.31
 
