@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.29** (2026-11-19) · Beta: **0.30_b** (2026-11-19) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.29** (2026-11-19) · Beta: **0.31_b** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,19 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.31_b (Beta)
+
+- **Mocap on your own characters**: Apply prepares any human rig by itself (Auto-Rig Pro included), the character holds
+  steady (no shaking, no wandering), Auto-Rig Pro faces go through their controls, the tongue is detected, and the
+  polish gets its own layer over an editable mocap layer with fewer keys.
+- **No more body spins** with one camera, and the arms no longer pop between frames; a leg that shows in the middle of
+  the picture is followed.
+- **Tracking 3 times faster** (a 35-second video: ~90 s -> ~30 s); 4K videos read more than twice as fast.
+- **Check with Claude** (optional, your Claude API key): key frames checked for which way the actor faces and what
+  the frame shows.
+- **Webcam + phone**: portrait phone videos come in upright, two cameras without sound sync by movement, and the
+  calibration works even when one camera does not show the feet.
 
 ### What's new in 0.30_b (Beta)
 

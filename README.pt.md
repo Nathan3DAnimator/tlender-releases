@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.29** (19/11/2026) · Beta: **0.30_b** (19/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.29** (19/11/2026) · Beta: **0.31_b** (20/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,19 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Novidades da 0.31_b (Beta)
+
+- **Mocap nos seus personagens**: o Aplicar prepara qualquer rig humano sozinho (Auto-Rig Pro também), o personagem
+  fica firme (sem tremer nem andar pelo mundo), o rosto de rigs Auto-Rig Pro vai pelos controles, a língua é detectada
+  e o polish ganha uma camada própria sobre a camada do mocap, editável e com menos chaves.
+- **Sem giros do corpo** com uma câmera, e os braços não estalam mais entre os quadros; uma perna que aparece no meio
+  da imagem passa a ser seguida.
+- **Rastreio 3 vezes mais rápido** (vídeo de 35 s: ~90 s -> ~30 s); vídeos 4K leem mais de duas vezes mais rápido.
+- **Conferir com o Claude** (opcional, com a sua chave da API do Claude): quadros-chave conferidos para saber para
+  onde o ator está virado e o que aparece no quadro.
+- **Webcam + celular**: vídeos de celular em pé entram na posição certa, duas câmeras sem som sincronizam pelo
+  movimento e a calibração funciona mesmo quando uma câmera não mostra os pés.
 
 ### Novidades da 0.30_b (Beta)
 
