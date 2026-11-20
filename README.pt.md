@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.31** (20/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.31** (20/11/2026) · Beta: **0.32_b** (20/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,14 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Novidades da 0.32_b (Beta)
+
+- **O RGB MoCap como motor do mocap**: com o RGB MoCap instalado, a aba Mocap roda o FlowHMR ou o ExMR dele num vídeo de
+  uma câmera (Preferências > IA > FlowHMR = a pasta dele). PC com placa NVIDIA.
+- **Corpo recolocado pela imagem**: os modelos acertam a pose, mas o corpo deriva no mundo; o Tlender acha a câmera pela
+  imagem e recoloca o corpo em cada quadro. Num vídeo de webcam medido contra duas câmeras, o erro do corpo caiu de
+  16 cm (FlowHMR do RGB MoCap) para 9 cm, com a mesma pose e sem tremer mais.
 
 ### Novidades da 0.31
 

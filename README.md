@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.31** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.31** (2026-11-20) · Beta: **0.32_b** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,14 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.32_b (Beta)
+
+- **RGB MoCap as the mocap engine**: with RGB MoCap installed, the Mocap tab runs its FlowHMR or ExMR on a one-camera
+  video (Preferences > AI > FlowHMR = its folder). PC with an NVIDIA card.
+- **Body re-placed by the picture**: the models get the pose right but their body drifts in the world; Tlender finds
+  the camera from the picture and re-places the body in every frame. On a webcam video measured against two cameras,
+  the body's error went from 16 cm (RGB MoCap's FlowHMR) to 9 cm, with the same pose and no added shake.
 
 ### What's new in 0.31
 
