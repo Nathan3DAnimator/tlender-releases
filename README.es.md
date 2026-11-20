@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.31** (20/11/2026) · Beta: **0.32_b** (20/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.31** (20/11/2026) · Beta: **0.33_b** (20/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,18 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.33_b (Beta) y de Mobile 0.16_b
+
+- **Mocap rehecho sobre RGB MoCap**: el código de RGB MoCap viene dentro de Tlender y usa los runtimes y modelos de su
+  instalación (Preferencias > IA > Mocap, con gestor de modelos). La pestaña Mocap es su flujo: ExMR, FlowHMR o GVHMR,
+  varias personas, corrección de contactos editable en la línea de tiempo, cara en shape keys y exportar FBX/BVH. PC
+  con NVIDIA.
+- **Cuerpo ajustado a la imagen**: en un vídeo de webcam medido contra dos cámaras, el error del cuerpo en el mundo bajó
+  de 13,5 cm (el resultado de RGB MoCap) a 9 cm; la vista previa dibuja los huesos sobre el vídeo.
+- **Importar el FBX de RGB MoCap y la ventana Retarget** (PC y Mobile): el FBX entra con el personaje ya asignado y la
+  ventana pasa el movimiento a cualquier personaje, con siluetas de las partes del cuerpo, vista previa en vivo, "En el
+  sitio" y ajuste por hueso. El retarget queda a 1,4 cm del resultado de RGB MoCap en el mismo personaje (antes 13 cm).
 
 ### Novedades de la 0.32_b (Beta)
 

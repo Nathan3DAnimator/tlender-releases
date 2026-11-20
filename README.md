@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.31** (2026-11-20) · Beta: **0.32_b** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.31** (2026-11-20) · Beta: **0.33_b** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,17 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.33_b (Beta) and Mobile 0.16_b
+
+- **Mocap rebuilt on RGB MoCap**: RGB MoCap's code ships inside Tlender and uses the runtimes and models of your
+  installation (Preferences > AI > Mocap, with a model manager). The Mocap tab is its workflow: ExMR, FlowHMR or GVHMR,
+  several people, contact correction editable on the timeline, face to shape keys and FBX/BVH export. PC with NVIDIA.
+- **Body fitted to the picture**: on a webcam video measured against two cameras, the body's world error fell from
+  13.5 cm (RGB MoCap's result) to 9 cm; the preview draws the bones over the video.
+- **Import RGB MoCap's FBX and the Retarget window** (PC and Mobile): the FBX comes in with the character already mapped
+  and the window passes the motion to any character, with body-part silhouettes, a live preview, "In place" and a
+  per-bone offset. The retarget lands 1.4 cm from RGB MoCap's result on the same character (13 cm before).
 
 ### What's new in 0.32_b (Beta)
 
