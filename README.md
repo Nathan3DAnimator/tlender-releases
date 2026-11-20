@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.29** (2026-11-19) · Beta: **0.31_b** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.31** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -38,7 +38,7 @@ and get test versions first (they end in `_b`). Everything that changed in each 
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
 
-### What's new in 0.31_b (Beta)
+### What's new in 0.31
 
 - **Mocap on your own characters**: Apply prepares any human rig by itself (Auto-Rig Pro included), the character holds
   steady (no shaking, no wandering), Auto-Rig Pro faces go through their controls, the tongue is detected, and the
@@ -50,8 +50,15 @@ Release Notes*).
   the frame shows.
 - **Webcam + phone**: portrait phone videos come in upright, two cameras without sound sync by movement, and the
   calibration works even when one camera does not show the feet.
+- **Feet on the floor without hops**: the mocap cleanup uses RGBMocap's contact ideas, each measured first: the hips'
+  height follows a smooth curve that keeps still feet down (hips wandering 4.4 m while standing -> 2.8 m), locked feet
+  ease in and out without a jolt, and real jumps stay jumps.
+- **Legs out of the frame no longer pull**: with one camera, the 3D guess of a bone only counts when the network really
+  sees it.
+- **Body by FlowHMR (external, PC with NVIDIA)**: the Track step can use FlowHMR, a whole-body temporal model that
+  shakes much less than frame-by-frame networks, run in your own Python environment (`tools/flowhmr_setup.ps1`).
 
-### What's new in 0.30_b (Beta)
+### Also new since 0.29 (first in beta 0.30_b)
 
 - **Mocap with real videos**: what the video doesn't show (the legs on a webcam, an arm leaving the frame) stays still
   instead of thrashing: T-pose if it never shows, the last pose seen for up to 2 s, and a smooth way back. Upper-body

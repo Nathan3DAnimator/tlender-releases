@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.29** (19/11/2026) · Beta: **0.31_b** (20/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.31** (20/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -37,7 +37,7 @@ fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências vo
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
 
-### Novidades da 0.31_b (Beta)
+### Novidades da 0.31
 
 - **Mocap nos seus personagens**: o Aplicar prepara qualquer rig humano sozinho (Auto-Rig Pro também), o personagem
   fica firme (sem tremer nem andar pelo mundo), o rosto de rigs Auto-Rig Pro vai pelos controles, a língua é detectada
@@ -49,8 +49,16 @@ e no próprio programa (*Ajuda > Notas da versão*).
   onde o ator está virado e o que aparece no quadro.
 - **Webcam + celular**: vídeos de celular em pé entram na posição certa, duas câmeras sem som sincronizam pelo
   movimento e a calibração funciona mesmo quando uma câmera não mostra os pés.
+- **Pés no chão sem pulos**: a limpeza do mocap usa as ideias de contato do RGBMocap, cada uma medida antes: a altura
+  do quadril segue uma curva suave que põe os pés parados no chão (quadril que andava 4,4 m parado em pé -> 2,8 m), os
+  pés travados entram e saem sem tranco e saltos de verdade continuam saltos.
+- **Pernas fora do quadro não puxam mais**: com uma câmera, o palpite 3D de um osso só conta quando a rede o vê de
+  verdade.
+- **Corpo pelo FlowHMR (externo, PC com NVIDIA)**: o passo Rastrear pode usar o FlowHMR, um modelo temporal de corpo
+  inteiro que treme bem menos que as redes de quadro em quadro, rodando num ambiente Python seu
+  (`tools/flowhmr_setup.ps1`).
 
-### Novidades da 0.30_b (Beta)
+### Também novo desde a 0.29 (primeiro na beta 0.30_b)
 
 - **Mocap com vídeos de verdade**: o que não aparece no vídeo (as pernas numa webcam, um braço que sai do quadro) fica
   parado em vez de se debater: T-pose se nunca aparece, a última pose vista por até 2 s, e volta suave. Vídeo de tronco e
