@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.36** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.37** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,17 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.37 and Mobile 0.19
+
+- **Retarget on every auto-rig**: Auto-Rig Pro, Rigify (new, legacy and FBX), Mixamo, MetaHuman, the Unreal Mannequin, Character Creator / iClone / AccuRIG, Daz Genesis 8 and 9, VRoid / VRM, Maya's HumanIK and Unity's Humanoid names, and studio rigs of their own (accessories never become a
+  limb). Hands and feet in **IK or FK**, each limb its own way; a rig with only IK goes through the IK; **Configure Rig**
+  for an own rig, saved in the profile.
+- **Modular face**: own expressions (a non-human face), many to many, Portuguese shape keys and the face through a
+  slider panel beside the head.
+- **Bone physics** on the mesh while playing (before only after the bake), a bone with physics animatable in Pose Mode
+  and the bake into the timeline's action.
+- Videos out of sight are not decoded while playing (no lag); the mocap's video in the Image Editor.
 
 ### Fix of 0.36 and Mobile 0.18
 

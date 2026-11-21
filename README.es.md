@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.36** (20/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.37** (20/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,17 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.37 y de Mobile 0.19
+
+- **Retarget en todos los auto-rigs**: Auto-Rig Pro, Rigify (el nuevo, el legado y el FBX), Mixamo, MetaHuman, el Mannequin de Unreal, Character Creator / iClone / AccuRIG, Daz Genesis 8 y 9, VRoid / VRM, HumanIK de Maya y los nombres del Humanoid de Unity, y rigs propios de estudio (los accesorios nunca son
+  miembro). Manos y pies en **IK o FK**, cada miembro a su manera; un rig solo con IK va por el IK; **Configurar rig**
+  para un rig propio, guardado en el perfil.
+- **Cara modular**: expresiones propias (cara no humana), muchos a muchos, shape keys en portugués y la cara por un
+  panel de sliders junto a la cabeza.
+- **Física de los huesos** en la malla al reproducir (antes solo después del horneado), hueso con física animable en
+  Modo Pose y el horneado en la acción de la línea de tiempo.
+- Los vídeos fuera de la vista no se decodifican al reproducir (sin lag); el vídeo del mocap en el Image Editor.
 
 ### Corrección de la 0.36 y de Mobile 0.18
 
