@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.37** (20/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.38** (21/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,16 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Novidades da 0.38 e do Mobile 0.20
+
+- **Rosto em personagens com partes**: personagem só com mandíbula, olhos e pálpebras em ossos (sem lábios nem shape
+  keys) recebe o rosto do mocap no que tem: a boca pela mandíbula, o olhar para os lados e para cima e para baixo, as
+  pálpebras piscando. Shape keys de expressão com olhos por osso também.
+- **Limites do rig no Retarget**: Limit Rotation e Limit Location do personagem respeitados no Retarget, no bake e no
+  rosto; os ossos de baixo compensam o que o de cima não pôde.
+- **Só corpo, Só rosto, Corpo e rosto** (PC): na aba Mocap, grave o corpo numa câmera e o rosto de perto em outra; o vídeo
+  Só rosto dá o rosto ao corpo do grupo, sincronizado pelo som.
 
 ### Novidades da 0.37 e do Mobile 0.19
 

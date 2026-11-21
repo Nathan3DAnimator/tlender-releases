@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.37** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.38** (2026-11-21) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,16 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.38 and Mobile 0.20
+
+- **Face on characters with parts**: a character with only a jaw, eyes and eyelids as bones (no lips or shape keys) gets
+  the mocap face on what it has: the mouth through the jaw, the eyes looking left, right, up and down, the eyelids
+  blinking. Expression shape keys with eyes on bones too.
+- **Rig limits in the Retarget**: the character's Limit Rotation and Limit Location kept in the Retarget, the bake and the
+  face; the bones below make up for what the one above could not do.
+- **Body only, Face only, Body and face** (PC): in the Mocap tab, record the body with one camera and the face up close
+  with another; the Face only video gives its face to the group's body, synced by sound.
 
 ### What's new in 0.37 and Mobile 0.19
 
