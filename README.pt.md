@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.38** (21/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.39** (21/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,16 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Novidades da 0.39 e do Mobile 0.21
+
+- **Cenas pesadas rápidas**: um personagem cheio de modificadores com mocap gravado quadro a quadro tocava a 8 quadros por
+  segundo e agora toca a 33; salvar uma cena de 1 milhão de keys caiu de 3,3 s para 0,45 s e o autossalvamento espera
+  você parar de mexer; o desfazer não copia mais todas as keys a cada passo.
+- **G e R pela câmera e X/Y no Graph Editor**, como no Blender: G move e R gira a câmera olhando por ela; G X / G Y e S X /
+  S Y no Graph Editor.
+- **Mocap mais limpo**: pés que não deslizam no Retarget (de 30–50 cm para cerca de 2 cm por passo), dedos certos em rigs
+  com falanges que copiam um controle, e a pelve sem trancos (PC).
 
 ### Novidades da 0.38 e do Mobile 0.20
 

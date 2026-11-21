@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.38** (2026-11-21) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.39** (2026-11-21) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,16 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.39 and Mobile 0.21
+
+- **Fast heavy scenes**: a character full of modifiers with a mocap baked frame by frame played at 8 frames per second and
+  now plays at 33; saving a scene of 1 million keys went from 3.3 s to 0.45 s and autosave waits for you to stop moving;
+  undo no longer copies every key on each step.
+- **G and R through the camera and X/Y in the Graph Editor**, like Blender: G moves and R rolls the camera while looking
+  through it; G X / G Y and S X / S Y in the Graph Editor.
+- **Cleaner mocap**: feet that don't slide in the Retarget (from 30–50 cm to about 2 cm a step), correct fingers on rigs
+  whose joints copy a control, and a pelvis without flicks (PC).
 
 ### What's new in 0.38 and Mobile 0.20
 
