@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.35** (20/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.36** (20/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,12 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Correção da 0.36 e do Mobile 0.18
+
+- A 0.35 fechava ao abrir quando a interface salva tinha um editor Retarget. **Se a sua 0.35 fecha ao abrir**, baixe o
+  `Tlender-0.36-win64.zip` na [release](https://github.com/NathanLourencoPeixoto/tlender-releases/releases/latest) e extraia por cima da pasta do Tlender. A partir da 0.36, uma abertura
+  que fecha faz a próxima abrir com as abas de fábrica e procurar atualização na hora.
 
 ### Novidades da 0.35 e do Mobile 0.17
 

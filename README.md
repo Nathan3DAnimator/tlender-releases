@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.35** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.36** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,12 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### Fix of 0.36 and Mobile 0.18
+
+- 0.35 closed on start when the saved interface had a Retarget editor. **If your 0.35 closes on start**, download
+  `Tlender-0.36-win64.zip` from the [release](https://github.com/NathanLourencoPeixoto/tlender-releases/releases/latest) and extract it over the Tlender folder. From 0.36 on, a start
+  that closes makes the next one open with the factory tabs and check for an update at once.
 
 ### What's new in 0.35 and Mobile 0.17
 
