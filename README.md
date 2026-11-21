@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.34** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.35** (2026-11-20) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,15 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.35 and Mobile 0.17
+
+- **The saved interface, as in Blender** (PC and Mobile): changing tabs and areas no longer saves by itself; Save
+  Preferences keeps the interface, and it comes back when Tlender opens and on File > New.
+- **The Mocap tab follows the file**: File > New leaves the tab empty, each .tlend has its own video list and each video
+  has a trash button to take it off the list (plus "Clear the List").
+- **Clear Map in the Retarget** (PC and Mobile): takes the bone off every role of a side (Ctrl+Z undoes it), and Clear
+  All on the face; and the character's IK off by default (the limbs go in FK; "Use the Rig's IK" turns it on).
 
 ### What's new in 0.34 and Mobile 0.16
 

@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.34** (20/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.35** (20/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,15 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.35 y de Mobile 0.17
+
+- **La interfaz guardada, como en Blender** (PC y Mobile): cambiar pestañas y áreas ya no guarda solo; Guardar
+  preferencias guarda la interfaz, y vuelve al abrir Tlender y en Archivo > Nuevo.
+- **La pestaña Mocap sigue al archivo**: Archivo > Nuevo deja la pestaña vacía, cada .tlend tiene su lista de vídeos y
+  cada vídeo tiene una papelera para quitarlo de la lista (y "Vaciar la lista").
+- **Limpiar mapa en el Retarget** (PC y Mobile): quita el hueso de todos los papeles de un lado (Ctrl+Z lo deshace), y
+  Limpiar todo en la cara; y el IK del personaje apagado por defecto (los miembros van en FK; "Usar el IK del rig" lo enciende).
 
 ### Novedades de la 0.34 y de Mobile 0.16
 
