@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.39** (21/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.40** (21/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,17 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.40 y de Mobile 0.22
+
+- **Rigs de terceros iguales que en Blender**: 14 de los 15 animatrónicos del FNAF 2 de NovaBandit ahora se mueven
+  exactamente como en Blender (antes 4): piezas en los pistones, cables, ojos con driver por curva, dos IK en el mismo
+  brazo; las asas Bezier siguen la regla de Blender actual en toda curva de animación.
+- **Cables que se arrastran al reproducir**: en los rigs con "física" de cables, el cable se queda atrás de la mano al
+  reproducir y se asienta al detenerse.
+- **El Retarget reconoce muchos más personajes**: agentes de Valorant, FNAF 1 y humanos del FNAF 2, Mario, Woody, Kissy
+  Missy, Huggy, BoxyBoo y más (56 de 254 rigs probados mejoraron); cinco rigs que cerraban el programa al abrirlos ahora
+  se abren.
 
 ### Novedades de la 0.39 y de Mobile 0.21
 

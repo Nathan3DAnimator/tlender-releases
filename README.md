@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.39** (2026-11-21) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.40** (2026-11-21) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,16 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.40 and Mobile 0.22
+
+- **Third-party rigs that match Blender**: 14 of NovaBandit's 15 FNAF 2 animatronics now move exactly as in Blender
+  (4 before): parts on the pistons, wires, eyes driven through a curve, two IKs on one arm; Bezier handles follow the
+  current Blender rule on every animation curve.
+- **Wires that drag during playback**: on rigs with wire "physics" the wire trails behind the hand while playing, and
+  settles when stopped.
+- **The Retarget recognizes many more characters**: Valorant agents, FNAF 1 and FNAF 2 humans, Mario, Woody, Kissy Missy,
+  Huggy, BoxyBoo and more (56 of 254 rigs surveyed got better); five rigs that closed the program on opening now open.
 
 ### What's new in 0.39 and Mobile 0.21
 
