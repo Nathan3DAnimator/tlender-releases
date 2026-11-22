@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.41** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.42** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,17 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.42 and Mobile 0.24
+
+- **Files inside the .tlend**: *File > External Data > Pack Resources* keeps textures, sounds, videos, volumes and fonts
+  inside the file, which opens on another computer without the folders; unpack with Blender's options.
+- **Relative paths (`//`)**: whatever is inside the project folder is saved as `//folder/file`, so the whole folder can be
+  moved or sent.
+- **Smart search for missing files**: when a scene's textures, sounds or videos are not on the computer, Tlender looks for
+  them by itself: by content (even renamed), by the project's folders, by name, by another extension and by similar names,
+  and replaces them all with one click.
+- **"Saved" notice** after Ctrl+S and **Blender 2.79 files** (layers, groups and Blender Internal materials).
 
 ### What's new in 0.41 and Mobile 0.23
 
@@ -202,6 +213,7 @@ The goal is the same result Blender gives, from the same file:
   rain that wets and drips, hair with physics.
 - **Texture Graph** live in materials, in 16 bits, animatable and computed on the GPU.
 - **Maya mode**: shortcuts, icons, Hotbox and Attribute Editor for people coming from Maya.
+- **Finds missing files by their content**: the renamed texture or the project folder moved to another drive.
 - **Exports to Real Engine**, the game engine by the same author.
 - **Tlender Mobile**: the same program on Android phones and tablets, with an interface for touch and pen.
 

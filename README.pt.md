@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.41** (22/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.42** (22/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,17 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Novidades da 0.42 e do Mobile 0.24
+
+- **Arquivos dentro do .tlend**: *Arquivo > Dados externos > Empacotar recursos* guarda texturas, sons, vídeos, volumes e
+  fontes dentro do arquivo, que abre em outro computador sem as pastas; desempacotar com as opções do Blender.
+- **Caminhos relativos (`//`)**: o que está dentro da pasta do projeto é gravado como `//pasta/arquivo`, então dá para
+  mover ou mandar a pasta inteira.
+- **Procura inteligente de arquivos faltando**: ao abrir uma cena com texturas, sons ou vídeos que não estão no
+  computador, o Tlender procura sozinho pelo conteúdo (mesmo renomeados), pelas pastas do projeto, pelo nome, por outra
+  extensão e por nomes parecidos, e troca todos com um clique.
+- **Aviso de "Salvo"** depois do Ctrl+S e **arquivos do Blender 2.79** (camadas, grupos e materiais do Blender Internal).
 
 ### Novidades da 0.41 e do Mobile 0.23
 
@@ -202,6 +213,7 @@ A meta é o mesmo resultado que o Blender dá, com o mesmo arquivo:
   destruição, chuva que molha e escorre, hair com física.
 - **Texture Graph** ao vivo nos materiais, em 16 bits, animável e calculado na GPU.
 - **Modo Maya**: atalhos, ícones, Hotbox e Attribute Editor para quem vem do Maya.
+- **Procura arquivos faltando pelo conteúdo**: acha a textura renomeada ou a pasta do projeto movida para outro disco.
 - **Exporta para a Real Engine**, a game engine do mesmo autor.
 - **Tlender Mobile**: o mesmo programa em celulares e tablets Android, com interface para toque e caneta.
 
