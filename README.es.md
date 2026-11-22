@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.42** (22/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.43** (22/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,19 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.43 y de Mobile 0.25
+
+- **Cámara virtual desde el celular**: con Tlender Mobile, girar y caminar con el celular mueve la cámara que filma
+  la escena del PC (siguiendo los cortes del Ctrl+B), con la imagen de la cámara en la pantalla del celular y keys grabadas al reproducir.
+- **Render del Tiempo real en la mejor calidad**: F12 y Ctrl+F12 usan siempre la malla entera, las imágenes enteras y
+  todos los fotogramas, sin límite de tiempo; la malla de los personajes ya no parpadea en las animaciones.
+- **Playblast por el Tiempo real**: con la vista en Renderizado, el Playblast graba la imagen del Tiempo real, con luces,
+  sombras y desenfoque de movimiento.
+- **Personajes pesados a más de 300 fotogramas por segundo en vez de 36**, sin tirones (normales en todos los núcleos,
+  videos sin uso fuera de la reproducción).
+- **Sync to Audio al ritmo de la escena** aunque el programa vaya lento, y la **vista de cámara** ya no cambia de cámara
+  al añadir o mover objetos (Ctrl+Numpad 0 elige la cámara de la escena).
 
 ### Novedades de la 0.42 y de Mobile 0.24
 

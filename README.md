@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.42** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.43** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,19 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.43 and Mobile 0.25
+
+- **Virtual camera from the phone**: with Tlender Mobile, turning and walking with the phone moves the camera filming
+  the PC's scene (following the Ctrl+B cuts), with the camera's image on the phone's screen and keys recorded while playing.
+- **Real-Time renders at the best quality**: F12 and Ctrl+F12 always use the whole mesh, the whole images and every frame,
+  with no time limit; characters' meshes no longer flicker in animations.
+- **Playblast through the Real-Time engine**: with the view in Rendered, the Playblast records the Real-Time image, with
+  lights, shadows and motion blur.
+- **Heavy characters play at more than 300 frames per second instead of 36**, without hitches (normals on every core,
+  unused movies left out of playback).
+- **Sync to Audio at the scene's pace** even when the program is slow, and the **camera view** no longer switches cameras
+  when objects are added or moved (Ctrl+Numpad 0 picks the scene camera).
 
 ### What's new in 0.42 and Mobile 0.24
 
