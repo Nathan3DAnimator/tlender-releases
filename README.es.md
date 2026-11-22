@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.40** (21/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.41** (22/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,14 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.41 y de Mobile 0.23
+
+- **Los personajes llenos de modificadores se reproducen mucho más rápido**: con Mirror, Armature, Delta Mush, Subdivisión,
+  Solidify y Displace sobre el esqueleto, un cuadro de la animación bajó de 134 ms a 9 ms (de 7 a más de 100 cuadros por
+  segundo); los deformadores solo mueven los vértices, sin copiar toda la malla, y el resultado es el mismo.
+- **Escenas con miles de objetos separados**: 10 mil objetos se reproducen a 37 cuadros por segundo (antes 4); el viewport
+  ya no dibuja lo que está fuera del encuadre y el Outliner bajó de 60 ms a menos de 1 ms por cuadro.
 
 ### Novedades de la 0.40 y de Mobile 0.22
 

@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.40** (2026-11-21) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.41** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,14 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.41 and Mobile 0.23
+
+- **Characters full of modifiers play back much faster**: with Mirror, Armature, Delta Mush, Subdivision, Solidify and
+  Displace over the skeleton, an animation frame went from 134 ms to 9 ms (from 7 to over 100 frames per second); the
+  deformers only move the vertices instead of copying the whole mesh, and the result is the same.
+- **Scenes with thousands of separate objects**: 10,000 objects play at 37 frames per second (4 before); the viewport no
+  longer draws what is outside the frame and the Outliner went from 60 ms to under 1 ms a frame.
 
 ### What's new in 0.40 and Mobile 0.22
 
