@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.43** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.44** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,13 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.44 and Mobile 0.26
+
+- **G and R on bones with Child Of** no longer make the bone jump away from the mouse (the head of a rig with a space switch).
+- **Bone simulation chains settle**: many short bones with Dynamic Chain and Heavy Chain (wires, cables) no longer spin
+  nonstop; they fall, come to rest and whip when swinging.
+- **Driver editor**: the Add Variable menu no longer closes the program.
 
 ### What's new in 0.43 and Mobile 0.25
 

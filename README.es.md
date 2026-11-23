@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.43** (22/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.44** (22/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,13 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.44 y de Mobile 0.26
+
+- **G y R en huesos con Child Of** ya no hacen saltar el hueso lejos del ratón (la cabeza de un rig con cambio de espacio).
+- **Las cadenas de la simulación de huesos se asientan**: muchos huesos cortos con Dynamic Chain y Heavy Chain (cables) ya
+  no giran sin parar; caen, se detienen y hacen el látigo al balancearse.
+- **Editor de drivers**: el menú Añadir variable ya no cierra el programa.
 
 ### Novedades de la 0.43 y de Mobile 0.25
 
