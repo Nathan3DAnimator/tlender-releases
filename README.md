@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.45** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.46** (2026-11-23) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,16 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.46 and Mobile 0.28
+
+- **Limits that stop G, R, S and the gizmo**: with *Affect Transform* (on by default) the value of a bone or object with
+  a Limit stops at the limit, and moving back answers at once (it used to go past and you had to drag it all back).
+- **Clearly visible selected bones**: thicker wires (control shapes too) and a lighter color on the selected one.
+- **Physics chains that don't jump when colliding**: a Heavy Chain wire lying on the body no longer bounces or whirls;
+  on a test character the links turning more than 60° in a frame went from 420 to 0, at the same cost.
+- **Fur that follows the hands** on meshes with a Subdivision before the Armature.
+- **Export to Real Engine**: parts parented to bones come out attached to them.
 
 ### What's new in 0.45 and Mobile 0.27
 

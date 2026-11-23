@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.45** (22/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.46** (23/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,16 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.46 y de Mobile 0.28
+
+- **Límites que detienen G, R, S y el manipulador**: con *Afectar transformación* (activada por defecto) el valor de un
+  hueso u objeto con Limit se detiene en el límite, y volver responde al instante (antes pasaba y había que arrastrarlo todo de vuelta).
+- **Huesos seleccionados bien visibles**: alambres más gruesos (también en las formas de control) y color más claro en el seleccionado.
+- **Cadenas de física que no saltan al chocar**: un cable en Heavy Chain apoyado en el cuerpo ya no rebota ni gira sin
+  motivo; en un personaje de prueba, los eslabones que giraban más de 60° en un cuadro pasaron de 420 a 0, con el mismo costo.
+- **Pelaje que sigue las manos** en mallas con Subdivision antes del Armature.
+- **Exportar a Real Engine**: las piezas emparentadas a huesos salen unidas a ellos.
 
 ### Novedades de la 0.45 y de Mobile 0.27
 
