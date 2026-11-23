@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.44** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.45** (2026-11-22) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,18 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.45 and Mobile 0.27
+
+- **Temporal denoise in animation renders** (Render > Temporal Denoise in Animations, on by default): each Ctrl+F12 frame
+  continues the denoise of the one before, carried by the motion, so the noise left no longer blinks. In all three
+  engines; the blinking dropped to less than half, without trails on what moves.
+- **On/off drivers matching Blender**: bones that light up eyes, show props or switch IK/FK at their limit now change as in
+  Blender (checked on NovaBandit's FNAF 2 rigs).
+- **Fur with the material's color in the viewport**: in Material Preview and Solid > Texture, the material's texture on
+  each strand.
+- **A sharp Real-Time view without DLSS**: when still, the view goes back to full resolution.
+- **Bones with Visible and Selectable**, in the bone panel and in the Outliner (eye and arrow).
 
 ### What's new in 0.44 and Mobile 0.26
 
@@ -233,6 +245,7 @@ The goal is the same result Blender gives, from the same file:
   rain that wets and drips, hair with physics.
 - **Texture Graph** live in materials, in 16 bits, animatable and computed on the GPU.
 - **Maya mode**: shortcuts, icons, Hotbox and Attribute Editor for people coming from Maya.
+- **Temporal denoise in animations**, path tracer too: the noise left doesn't blink from frame to frame.
 - **Finds missing files by their content**: the renamed texture or the project folder moved to another drive.
 - **Exports to Real Engine**, the game engine by the same author.
 - **Tlender Mobile**: the same program on Android phones and tablets, with an interface for touch and pen.

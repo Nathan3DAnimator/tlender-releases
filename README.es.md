@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.44** (22/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.45** (22/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,18 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.45 y de Mobile 0.27
+
+- **Denoise temporal en el render de animación** (Render > Denoise temporal en la animación, activado por defecto): cada
+  cuadro del Ctrl+F12 continúa el denoise del anterior, llevado por el movimiento, y el ruido que queda ya no parpadea. En
+  los tres motores; el parpadeo bajó a menos de la mitad, sin estela en lo que se mueve.
+- **Drivers de encendido/apagado iguales a Blender**: los huesos que encienden ojos, muestran accesorios o cambian IK/FK
+  en el límite ahora cambian como en Blender (comprobado en los rigs FNAF 2 de NovaBandit).
+- **Pelaje con el color del material en la vista**: en Material Preview y en Sólido > Textura, la textura del material en
+  cada pelo.
+- **Tiempo real nítido sin DLSS**: quieta, la vista vuelve a la resolución completa.
+- **Huesos con Visible y Seleccionable**, en el panel del hueso y en el Outliner (ojo y flecha).
 
 ### Novedades de la 0.44 y de Mobile 0.26
 
@@ -236,6 +248,7 @@ El objetivo es el mismo resultado que da Blender, con el mismo archivo:
   destrucción, lluvia que moja y escurre, pelo con física.
 - **Texture Graph** en vivo en los materiales, en 16 bits, animable y calculado en la GPU.
 - **Modo Maya**: atajos, iconos, Hotbox y Attribute Editor para quien viene de Maya.
+- **Denoise temporal en la animación**, también en el path tracer: el ruido que queda no parpadea de un cuadro a otro.
 - **Busca archivos que faltan por su contenido**: la textura renombrada o la carpeta del proyecto movida a otro disco.
 - **Exporta a Real Engine**, el motor de juegos del mismo autor.
 - **Tlender Mobile**: el mismo programa en móviles y tabletas Android, con interfaz para tacto y lápiz.
