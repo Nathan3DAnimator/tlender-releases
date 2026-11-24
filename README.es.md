@@ -6,7 +6,7 @@
 para ser rápido. Usa los mismos atajos, menús y conceptos que Blender, así que quien ya usa Blender se siente en casa, y
 abre y guarda archivos `.blend`.
 
-**Versión actual: 0.46** (23/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
+**Versión actual: 0.47** (24/11/2026) · Windows 10/11 64 bits · Español, English, Português ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## Qué estás descargando
@@ -37,6 +37,12 @@ cuando cierras el programa. Marcando *Usar la versión Beta de Tlender* en las P
 recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en cada versión está en las
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
+
+### Novedades de la 0.47
+
+- **Código abierto**: el código de Tlender ahora es público en [tlender-source](https://github.com/Nathan3DAnimator/tlender-source), bajo la GPL-3.0-or-later
+  (la misma familia que Blender). El SDK de DLSS se descarga de NVIDIA con un script al compilar.
+- **Editor de episodios** empieza sin carpeta elegida (antes apuntaba a una carpeta que solo existía en el ordenador del autor).
 
 ### Novedades de la 0.46 y de Mobile 0.28
 

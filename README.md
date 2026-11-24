@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.46** (2026-11-23) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.47** (2026-11-24) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,12 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.47
+
+- **Open source**: Tlender's source code is now public at [tlender-source](https://github.com/Nathan3DAnimator/tlender-source), under the GPL-3.0-or-later
+  (the same family as Blender's). The DLSS SDK is downloaded from NVIDIA by a script at build time.
+- **Episode editor** starts with no folder picked (it used to point at a folder that only existed on the author's computer).
 
 ### What's new in 0.46 and Mobile 0.28
 
