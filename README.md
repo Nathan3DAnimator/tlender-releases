@@ -38,6 +38,10 @@ and get test versions first (they end in `_b`). Everything that changed in each 
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
 
+### In beta 0.49_b (Beta channel)
+- **Guided, faster rotoscoping**: a Clip tab with five steps, pins that respond in ~0.1 s, a video preview on a
+  thread with Cancel, Fast/Good/Max quality and 16-bit PNG export without freezing the screen.
+
 ### What's new in 0.48 and Mobile 0.29
 
 - **Smart cutout with pins, no green screen**: circles on what stays and what goes; SAM 2.1 makes the mask and follows

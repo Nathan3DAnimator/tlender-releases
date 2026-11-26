@@ -37,6 +37,10 @@ fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências vo
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
 
+### Na beta 0.49_b (canal Beta)
+- **Rotoscopia guiada e mais rápida**: aba Recortar com cinco passos, pins que respondem em ~0,1 s, prévia do vídeo
+  numa thread com Cancelar, qualidade Rápida/Boa/Máxima e exportação em PNG 16 bits sem travar a tela.
+
 ### Novidades da 0.48 e do Mobile 0.29
 
 - **Recorte inteligente por pins, sem tela verde**: círculos no que fica e no que sai; o SAM 2.1 faz a máscara e segue o

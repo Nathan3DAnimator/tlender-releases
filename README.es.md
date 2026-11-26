@@ -38,6 +38,11 @@ recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
 
+### En la beta 0.49_b (canal Beta)
+- **Rotoscopia guiada y más rápida**: pestaña Recortar con cinco pasos, pins que responden en ~0,1 s, vista previa
+  del video en un hilo con Cancelar, calidad Rápida/Buena/Máxima y exportación en PNG de 16 bits sin congelar la
+  pantalla.
+
 ### Novedades de la 0.48 y de Mobile 0.29
 
 - **Recorte inteligente con pines, sin pantalla verde**: círculos en lo que se queda y en lo que sale; SAM 2.1 hace la
