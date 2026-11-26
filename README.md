@@ -6,7 +6,7 @@
 Vulkan to be fast. It uses the same shortcuts, menus and concepts as Blender, so Blender users feel at home, and it
 opens and saves `.blend` files.
 
-**Current version: 0.47** (2026-11-24) · Windows 10/11 64-bit · English, Português, Español ·
+**Current version: 0.48** (2026-11-25) · Windows 10/11 64-bit · English, Português, Español ·
 [Tlender Mobile for Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## What you are downloading
@@ -37,6 +37,17 @@ installed when you close the program. Tick *Use Tlender Beta Version* in the Pre
 and get test versions first (they end in `_b`). Everything that changed in each version is in the
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
+
+### What's new in 0.48 and Mobile 0.29
+
+- **Smart cutout with pins, no green screen**: circles on what stays and what goes; SAM 2.1 makes the mask and follows
+  the object, and ViTMatte refines edges and hair (hair error from 14.9 to 2.5 in a test). Saved as 16-bit PNG or EXR.
+- **The cutout in the 3D scene**: it becomes a physical plane in front of the tracked camera, lit and shadowed by the 3D,
+  and areas pinned to the scene (like the floor) stay visible too.
+- **PBR maps from the cutout**: Albedo, Normal, Roughness and Metal plus a ready material (MoGe-2 and Marigold on the PC).
+- **Tracking like RealScan's**: rolling shutter and full lens in the solve, about 100× faster (4K hallway from 81 min to
+  50 s), dense mode, per-frame error graph and a tripod warning.
+- **ARCore takes** in Tlender Mobile, sent to the PC over Wi-Fi with camera, floor, mesh and light.
 
 ### What's new in 0.47
 
@@ -256,7 +267,7 @@ The goal is the same result Blender gives, from the same file:
   Creator, Daz and more, and poses through the rig's own controls.
 - **Animator tools**: Block/Spline/Polish stages, temporary spaces, world lock, per-frame 2D drawing, ghosts, arcs,
   spacing chart and physics help (center of mass and trajectory).
-- **Portuguese lip sync**, AI rotoscoping (SAM 2), crowds and live motion capture.
+- **Portuguese lip sync**, pin-based cutout without a green screen (SAM 2.1 + ViTMatte) with PBR maps and a physical camera plane, crowds and live motion capture.
 - **Physics**: voxel liquids and gases, fire that lights the scene, cloth, ropes and chains, rigid bodies, destruction,
   rain that wets and drips, hair with physics.
 - **Texture Graph** live in materials, in 16 bits, animatable and computed on the GPU.

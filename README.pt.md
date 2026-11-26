@@ -6,7 +6,7 @@
 ser rápido. Ele usa os mesmos atalhos, menus e conceitos do Blender, então quem já usa o Blender se sente em casa, e abre
 e salva arquivos `.blend`.
 
-**Versão atual: 0.47** (24/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
+**Versão atual: 0.48** (25/11/2026) · Windows 10/11 64 bits · Português, English, Español ·
 [Tlender Mobile para Android](https://github.com/NathanLourencoPeixoto/tlender-mobile-releases)
 
 ## O que você está baixando
@@ -36,6 +36,17 @@ O Tlender procura uma versão nova ao abrir e baixa **só os arquivos que mudara
 fecha o programa. Marcando *Usar a versão Beta do Tlender* nas Preferências você entra no **canal Beta** e recebe as versões de teste antes (elas
 terminam em `_b`). Tudo o que mudou em cada versão está nas [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases)
 e no próprio programa (*Ajuda > Notas da versão*).
+
+### Novidades da 0.48 e do Mobile 0.29
+
+- **Recorte inteligente por pins, sem tela verde**: círculos no que fica e no que sai; o SAM 2.1 faz a máscara e segue o
+  objeto, e o ViTMatte refina borda e cabelo (erro no cabelo de 14,9 para 2,5 num teste). Sai em PNG de 16 bits ou EXR.
+- **O recorte na cena 3D**: vira um plano físico na frente da câmera do tracking, com a luz e as sombras do 3D, e áreas
+  presas na cena (como o chão) ficam visíveis junto.
+- **Mapas PBR do recorte**: Albedo, Normal, Roughness e Metal e um material pronto (MoGe-2 e Marigold no PC).
+- **Tracking como o do RealScan**: rolling shutter e lente completa no solve, cerca de 100× mais rápido (corredor 4K de
+  81 min para 50 s), modo denso, gráfico do erro por quadro e aviso de tripé.
+- **Tomadas com o ARCore** no Tlender Mobile, enviadas ao PC pelo Wi-Fi com câmera, chão, malha e luz.
 
 ### Novidades da 0.47
 
@@ -255,7 +266,7 @@ A meta é o mesmo resultado que o Blender dá, com o mesmo arquivo:
   Character Creator, Daz e outros, e posa pelos controles da própria rig.
 - **Ferramentas de animador**: etapas Bloquear/Spline/Polir, espaços temporários, travar no mundo, desenho 2D por
   quadro, fantasmas, arcos, gráfico de espaçamento e ajuda de física (centro de massa e parábola).
-- **Lip sync em português**, rotoscopia com IA (SAM 2), multidões e captura de movimento ao vivo.
+- **Lip sync em português**, recorte por pins sem tela verde (SAM 2.1 + ViTMatte) com mapas PBR e plano físico na câmera, multidões e captura de movimento ao vivo.
 - **Física**: líquidos e gases em voxels, fogo que ilumina a cena, tecidos, cordas e correntes, corpos rígidos,
   destruição, chuva que molha e escorre, hair com física.
 - **Texture Graph** ao vivo nos materiais, em 16 bits, animável e calculado na GPU.
