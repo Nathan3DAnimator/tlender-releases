@@ -38,6 +38,14 @@ recibes antes las versiones de prueba (terminan en `_b`). Todo lo que cambió en
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) y en el propio programa (*Ayuda > Notas
 de la versión*).
 
+### En la beta 0.50_b y en Mobile 0.31_b (canal Beta)
+- **Para quien empieza**: tutorial Primeros pasos, imágenes en el manual, dos proyectos de ejemplo y un resumen antes
+  de renderizar la animación.
+- **Extensiones en Python** (PC): llegan desactivadas. Una extensión activada no está aislada: tiene el mismo acceso
+  al equipo que tú. Activa solo lo que venga de alguien de confianza.
+- **Scripts y MCP**: huesos, pesos y pose.
+- **Correcciones** en el intercambio de archivos por Alembic, glTF y materiales, y un error de uso de Vulkan con DLSS.
+
 ### En la beta 0.49_b (canal Beta)
 - **Rotoscopia guiada y más rápida**: pestaña Recortar con cinco pasos, pins que responden en ~0,1 s, vista previa
   del video en un hilo con Cancelar, calidad Rápida/Buena/Máxima y exportación en PNG de 16 bits sin congelar la

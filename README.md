@@ -38,6 +38,14 @@ and get test versions first (they end in `_b`). Everything that changed in each 
 [releases](https://github.com/NathanLourencoPeixoto/tlender-releases/releases) and in the program itself (*Help >
 Release Notes*).
 
+### In beta 0.50_b and Mobile 0.31_b (Beta channel)
+- **For beginners**: a First steps tutorial, pictures in the manual, two example projects and a summary before an
+  animation render.
+- **Python extensions** (PC): installed turned off. An extension you turn on is not sandboxed: it has the same access
+  to the computer as you do. Only turn on what comes from someone you trust.
+- **Scripts and MCP**: bones, weights and posing.
+- **Fixes** exchanging files through Alembic, glTF and materials, and a Vulkan usage error with DLSS.
+
 ### In beta 0.49_b (Beta channel)
 - **Guided, faster rotoscoping**: a Clip tab with five steps, pins that respond in ~0.1 s, a video preview on a
   thread with Cancel, Fast/Good/Max quality and 16-bit PNG export without freezing the screen.
